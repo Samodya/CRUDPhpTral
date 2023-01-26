@@ -1,7 +1,7 @@
 <?php
     require("classes/Student.php");
     session_start();
-
+    
     if(isset($_POST["btnAdd"])){
 
         $students=array();
@@ -20,6 +20,7 @@
 
         try {
             $student->AddStudent();
+
         } catch (Exception $th) {
             throw $th;
         }
@@ -61,6 +62,7 @@
             </div>
         </div>
         <div class="add-new-form">
+        
             <form action="" method="post" class="text-light bg-dark p-3 new-student-form">
                 <div class="d-flex form-top">
                 <h1><i class="bi bi-person-add"></i> New Student</h1>

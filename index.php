@@ -1,3 +1,8 @@
+<?php
+    if(isset($_SESSION["studentEdit"])){
+        unset($_SESSION["studentEdit"]);
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

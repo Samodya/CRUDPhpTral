@@ -23,8 +23,10 @@
         );
 
         try {
+            $student->SetSID($_SESSION["studentEdit"]->GetSID());
             $student->UpdateStudent();
             header("location:viewStudent.php");
+            //unset($_SESSION["studentEdit"]);
         } catch (Exception $th) {
             throw $th;
         }
@@ -57,7 +59,7 @@
             <div class="bottom-menu">
                 <ul>
                    <li> <a href="index.php" class="non-active"><i class="bi bi-house-door-fill"></i> Home</a> </li>
-                   <li> <a href="newStudent.php" class="active-menu"><i class="bi bi-person-add"></i> Add new Student</a> </li> 
+                   <li> <a href="newStudent.php" class="non-active"><i class="bi bi-person-add"></i> Add new Student</a> </li> 
                    <li> <a href="viewStudent.php" class="non-active"><i class="bi bi-person-lines-fill"></i> View All students</a> </li>  
                    
                 </ul>

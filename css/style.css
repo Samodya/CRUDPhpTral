@@ -101,6 +101,14 @@
     align-items: center;
     justify-content: space-between;
 }
+.messge{
+    padding: 10px;
+    text-align: center;
+    background: #81e773;
+    color: #132711;
+    border:2px solid #132711;
+
+}
 
 /*View-all-form*/
 .view-all-form{

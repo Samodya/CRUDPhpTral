@@ -1,6 +1,7 @@
 <?php
     require("classes/Student.php");
     session_start();
+    unset($_SESSION["studentEdit"]);
     $students=Student::GetStudents();
     $bEdit= new Student(null,null,null,null,null,null);
     if(isset($_POST["btnEdit"])){
