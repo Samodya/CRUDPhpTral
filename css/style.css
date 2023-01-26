@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@100&family=Pacifico&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.body-content{
+    display: flex;
+    width: 100%;
+}
+
+/*main page*/
+.page-content {
+    flex:5;
+    font-family: 'Anton', sans-serif; 
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.banner{
+    padding: 10px;
+    text-align: center;
+}
+
+.banner-content{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 9vh;
+}
+
+.title-bar{
+    width: 100%;
+    padding: 5px;
+}
+
+.manage-student{
+    padding: 5px;
+   
+}
+
+.bottom-content{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addStu,.view{
+    margin: 5px;
+    background-color: #3e0d53;
+    border-radius: 15px;
+   
+}
+
+.addStu img,.view img{
+    margin: 10px;
+    width: 50%;
+}
+
+
+.addStu a,.view a{
+    text-decoration: none;
+}
+
+/*add new page*/
+.add-new-form{
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-new-form form{
+    width: 60%;
+    padding-right: 10px;
+    margin: auto;
+}
+.add-new-form ul{
+    list-style: none;
+   
+}
+
+.add-new-form ul li{
+    font-weight: bold;
+}
+
+.add-new-form ul li input{
+    margin-bottom: 10px;
+    background: transparent;
+    color: #f4edf7;
+}
+
+.form-top{
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*View-all-form*/
+.view-all-form{
+    flex: 5;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-content{
+    width: 80%;
+    margin: auto;
+    max-height: 70vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.student-table{
+    border: 2PX solid #0f0f0f;
+    border-radius: 5px;
+}
+
+.messg{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 10px 5px;
+    background: #ee878d;
+    color: #85060c;
+    border: solid 2px #85060c;
+    border-radius: 10px;
+    
+}
+
+/*sidenav*/
+.sidenav{
+    flex:1;
+    background: #3e0b55;
+    color: #f4edf7;
+    height: 100vh;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+
+}
+
+hr{
+    width: 100%;
+    border: 0.5px solid #f4edf7;
+
+}
+
+.top-icon{
+    font-size: 30px;
+}
+
+.bottom-menu ul{
+    list-style: none;
+}
+
+.bottom-menu ul li{
+    padding-left: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.active-menu{
+    text-decoration: none;
+    background: #f4edf7;
+    color: #3e0b55;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.non-active{
+    text-decoration: none;
+    color: #f4edf7;
+    font-size: 14px;
+}
+
+.non-active:hover{
+    background: #f4edf7;
+    color: #3e0b55;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+@media (max-width: 1000px){
+    .sidenav{
+        flex:2;
+    }
+   
+    .bottom-menu ul li{
+        padding-left: 1px;
+        margin-bottom: 10px;
+    }
+
+    .banner{
+        justify-content: center;
+        padding: 10px;
+        flex-direction: column;
+        
+    }
+}
+
+@media (max-width: 500px){
+    .bottom-menu ul li{
+        padding-left: -5px;
+        margin-bottom: 10px;
+    }
+
+    .banner{
+        justify-content: space-around;
+        padding: 10px;
+        flex-direction: column;
+        
+    }
+}
+
+
